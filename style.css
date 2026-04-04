@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* OVERLAY */
+.overlay {
+  text-align: center;
+}
+
+/* TEXT */
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 60px;
+  color: gold;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #aaa;
+}
+
+.line {
+  width: 80px;
+  height: 2px;
+  background: gold;
+  margin: 20px auto;
+}
+
+.coming {
+  font-size: 22px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* ANIMATIONS */
+.fade {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+.slide {
+  transform: translateY(40px);
+  opacity: 0;
+  animation: slideUp 2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.delay {
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
